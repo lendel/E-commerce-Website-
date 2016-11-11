@@ -1,0 +1,6 @@
+@include('website_layout.head_css')
+@include('website_layout.header')
+@include('website_layout.slider')
+@include('website_layout.product_details')
+@include('website_layout.Fotter')
+@include('website_layout.fotter_js')
