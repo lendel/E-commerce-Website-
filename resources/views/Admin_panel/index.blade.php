@@ -1,4 +1,5 @@
-
+@extends('layouts.app')
+@section('content')
 <html>
 <head>
     <meta charset="UTF-8">
@@ -188,199 +189,238 @@
                                   <li class="">
 
                                   </li>
+                                  <script>
+                                  function date_time(id)
+                                  {
+                                          date = new Date;
+                                          year = date.getFullYear();
+                                          month = date.getMonth();
+                                          months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'Jully', 'August', 'September', 'October', 'November', 'December');
+                                          d = date.getDate();
+                                          day = date.getDay();
+                                          days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+                                          h = date.getHours();
+                                          if(h<10)
+                                          {
+                                                  h = "0"+h;
+                                          }
+                                          m = date.getMinutes();
+                                          if(m<10)
+                                          {
+                                                  m = "0"+m;
+                                          }
+                                          s = date.getSeconds();
+                                          if(s<10)
+                                          {
+                                                  s = "0"+s;
+                                          }
+                                          result = ''+days[day]+' '+months[month]+' '+d+' '+year+' '+h+':'+m+':'+s;
+                                          document.getElementById(id).innerHTML = result;
+                                          setTimeout('date_time("'+id+'");','1000');
+                                          return true;
+                                  }
+                                  </script>
                                   <li class="">
-                                    <a href="javascript:;">
-                                      <i class="fa fa-building "></i>
-                                      <span class="link-title">Install Company</span>
-                                      <span class="fa arrow"></span>
-                                    </a>
-                                    <ul class="collapse">
-                                     
-                                    </ul>
+                                    <div class="well" style="background-color:#303030"><span id="date_time"></span>
+            <script type="text/javascript">window.onload = date_time('date_time');</script></div>
                                   </li>
-                                  <li class="">
-                                    <a href="javascript:;">
-                                      <i class="fa fa-tasks"></i>
-                                      <span class="link-title">Brand Setup</span>
-                                      <span class="fa arrow"></span>
-                                    </a>
-                                    
-                                  </li>
-                                 
 
-
-                                  <li class="">
-                                    <a href="javascript:;">
-                                      <i class="fa fa-pencil"></i>
-                                      <span class="link-title">
-                                    Category Setup
-                            </span>
-                                      <span class="fa arrow"></span>
-                                    </a>
-                                   
-                                  </li>
-                                 
-
-
-                                  <li>
-                                    <a href="/Cat_regestration">
-                                      <i class="fa fa-registered" aria-hidden="true"></i>
-                                      <span  class="link-title">Product Setup</span>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="/Question">
-                                      <i class="fa fa-file"></i>
-                                      <span class="link-title">
-                                        New Question
-                                  </span>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="/Comment_report">
-                                      <i class="fa fa-font"></i>
-                                      <span class="link-title">
-                                    comment Report
-                                  </span>  </a>
-                                  </li>
-                                  <li>
-                                    <a href="maps.html">
-                                      <i class="fa fa-map-marker"></i><span class="link-title">
-                                    Maps
-                                  </span>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="chart.html">
-                                      <i class="fa fa fa-bar-chart-o"></i>
-                                      <span class="link-title">
-                                    Charts
-                                  </span>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="calendar.html">
-                                      <i class="fa fa-calendar"></i>
-                                      <span class="link-title">
-                                    Calendar
-                                  </span>
-                                    </a>
-                                  </li>
                                   <li>
                                     <a href="javascript:;">
                                       <i class="fa fa-exclamation-triangle"></i>
                                       <span class="link-title">
-                                      Error Pages
+                                      RBAC
                                     </span>
                                       <span class="fa arrow"></span>
                                     </a>
                                     <ul class="collapse">
                                       <li>
                                         <a href="403.html">
-                                          <i class="fa fa-angle-right"></i>&nbsp;403</a>
+                                          <i class="fa fa-angle-right"></i>Personal Information</a>
                                       </li>
                                       <li>
                                         <a href="404.html">
-                                          <i class="fa fa-angle-right"></i>&nbsp;404</a>
+                                          <i class="fa fa-angle-right"></i>user Setup</a>
                                       </li>
                                       <li>
                                         <a href="405.html">
-                                          <i class="fa fa-angle-right"></i>&nbsp;405</a>
+                                          <i class="fa fa-angle-right"></i>Permission Setup</a>
                                       </li>
                                       <li>
                                         <a href="500.html">
-                                          <i class="fa fa-angle-right"></i>&nbsp;500</a>
+                                          <i class="fa fa-angle-right"></i>Role Setup</a>
                                       </li>
                                       <li>
                                         <a href="503.html">
-                                          <i class="fa fa-angle-right"></i>&nbsp;503</a>
+                                          <i class="fa fa-angle-right"></i>permission Role</a>
                                       </li>
                                       <li>
                                         <a href="offline.html">
-                                          <i class="fa fa-angle-right"></i>&nbsp;offline</a>
+                                          <i class="fa fa-angle-right"></i>Role User</a>
                                       </li>
-                                      <li>
-                                        <a href="countdown.html">
-                                          <i class="fa fa-angle-right"></i>&nbsp;Under Construction</a>
-                                      </li>
+
                                     </ul>
                                   </li>
+
+
+
+                                <li class="">
+                                    <a href="javascript:;">
+                                      <i class="fa fa-cog" aria-hidden="true"></i>
+                                      <span class="link-title">
+                                  Category Setup
+                                  </span>
+
+                                    </a>
+
+                                  </li>
+
+                                  <li class="">
+                                    <a href="javascript:;">
+                                      <i class="fa fa-cog" aria-hidden="true"></i>
+                                      <span class="link-title">
+                                    Manufacture(Brand) Setup
+                                  </span>
+
+                                    </a>
+
+                                  </li>
+
+
+                                  <li class="">
+                                    <a href="javascript:;">
+                                      <i class="fa fa-cog" aria-hidden="true"></i>
+                                      <span class="link-title">
+                                    Product Setup
+                            </span>
+
+                                    </a>
+
+                                  </li>
+
+
+
+                                  <li>
+                                    <a href="/Cat_regestration">
+                                      <i class="fa fa-cog" aria-hidden="true"></i>
+                                      <span  class="link-title">Customer Setup</span>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="/Question">
+                                      <i class="fa fa-cog" aria-hidden="true"></i>
+                                      <span class="link-title">
+                                        Offer Setup
+                                  </span>
+                                    </a>
+                                  </li>
+
+                                  <li>
+                                    <a href="/Question">
+                                      <i class="fa fa-exchange" aria-hidden="true"></i>
+                                      <span class="link-title">
+                                        Transaction
+                                  </span>
+                                    </a>
+                                  </li>
+
+
+                                  <li>
+                                    <a href="/Comment_report">
+                                      <i class="fa fa-file-text" aria-hidden="true"></i>
+                                      <span class="link-title">
+                                    Delivery Report
+                                  </span>  </a>
+                                  </li>
+                                  <li>
+                                    <a href="maps.html">
+                                      <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    Sales Report
+                                  </span>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="chart.html">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                      <span class="link-title">
+                                    Order Report
+                                  </span>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="calendar.html">
+                                      <i class="fa fa-file-text" aria-hidden="true"></i>
+                                      <span class="link-title">
+                                    Low Stk Report
+                                  </span>
+                                    </a>
+                                  </li>
+
+
+                                  <li>
+                                    <a href="javascript:;">
+                                      <i class="fa fa-exclamation-triangle"></i>
+                                      <span class="link-title">
+                                      Configuration
+                                    </span>
+                                      <span class="fa arrow"></span>
+                                    </a>
+                                    <ul class="collapse">
+                                      <li>
+                                        <a href="403.html">
+                                          <i class="fa fa-angle-right"></i>Payment Method</a>
+                                      </li>
+                                      <li>
+                                        <a href="/Company_inforamtion">
+                                          <i class="fa fa-angle-right"></i>General Setting</a>
+                                      </li>
+                                      <li>
+                                        <a href="405.html">
+                                          <i class="fa fa-angle-right"></i> </a>
+                                      </li>
+                                      <li>
+                                        <a href="500.html">
+                                          <i class="fa fa-angle-right"></i> </a>
+                                      </li>
+                                      <li>
+                                        <a href="503.html">
+                                          <i class="fa fa-angle-right"></i> </a>
+                                      </li>
+                                      <li>
+                                        <a href="offline.html">
+                                          <i class="fa fa-angle-right"></i>Role User</a>
+                                      </li>
+
+                                    </ul>
+                                  </li>
+
+
                                   <li>
                                     <a href="grid.html">
-                                      <i class="fa fa-columns"></i>
+
                                       <span class="link-title">
-                            Grid
+
                             </span>
                                     </a>
                                   </li>
                                   <li>
                                     <a href="blank.html">
-                                      <i class="fa fa-square-o"></i>
+
                                       <span class="link-title">
-                            Blank Page
+
                             </span>
                                     </a>
                                   </li>
                                   <li class="nav-divider"></li>
                                   <li>
                                     <a href="login.html">
-                                      <i class="fa fa-sign-in"></i>
+
                                       <span class="link-title">
-                            Login Page
+                            Logout
                             </span>
                                     </a>
                                   </li>
-                                  <li>
-                                    <a href="javascript:;">
-                                      <i class="fa fa-code"></i>
-                                      <span class="link-title">
-                              Unlimited Level Menu
-                              </span>
-                                      <span class="fa arrow"></span>
-                                    </a>
-                                    <ul class="collapse">
-                                      <li>
-                                        <a href="javascript:;">Level 1  <span class="fa arrow"></span>  </a>
-                                        <ul class="collapse">
-                                          <li> <a href="javascript:;">Level 2</a>  </li>
-                                          <li> <a href="javascript:;">Level 2</a>  </li>
-                                          <li>
-                                            <a href="javascript:;">Level 2  <span class="fa arrow"></span>  </a>
-                                            <ul class="collapse">
-                                              <li> <a href="javascript:;">Level 3</a>  </li>
-                                              <li> <a href="javascript:;">Level 3</a>  </li>
-                                              <li>
-                                                <a href="javascript:;">Level 3  <span class="fa arrow"></span>  </a>
-                                                <ul class="collapse">
-                                                  <li> <a href="javascript:;">Level 4</a>  </li>
-                                                  <li> <a href="javascript:;">Level 4</a>  </li>
-                                                  <li>
-                                                    <a href="javascript:;">Level 4  <span class="fa arrow"></span>  </a>
-                                                    <ul class="collapse">
-                                                      <li> <a href="javascript:;">Level 5</a>  </li>
-                                                      <li> <a href="javascript:;">Level 5</a>  </li>
-                                                      <li> <a href="javascript:;">Level 5</a>  </li>
-                                                    </ul>
-                                                  </li>
-                                                </ul>
-                                              </li>
-                                              <li> <a href="javascript:;">Level 4</a>  </li>
-                                            </ul>
-                                          </li>
-                                          <li> <a href="javascript:;">Level 2</a>  </li>
-                                        </ul>
-                                      </li>
-                                      <li> <a href="javascript:;">Level 1</a>  </li>
-                                      <li>
-                                        <a href="javascript:;">Level 1  <span class="fa arrow"></span>  </a>
-                                        <ul class="collapse">
-                                          <li> <a href="javascript:;">Level 2</a>  </li>
-                                          <li> <a href="javascript:;">Level 2</a>  </li>
-                                          <li> <a href="javascript:;">Level 2</a>  </li>
-                                        </ul>
-                                      </li>
-                                    </ul>
-                                  </li>
+
                                 </ul>
                         <!-- /#menu -->
                     </div>
@@ -391,11 +431,11 @@
                         <div class="inner bg-light lter">
               <div class="col-lg-12">
 
-                           
 
 
 
 
+                    @yield('From_content')
 
 
 
@@ -467,7 +507,7 @@
             </div>
             <!-- /#wrap -->
             <footer class="Footer bg-dark dker">
-                <p>2016 &copy; Metis Bootstrap Admin Template</p>
+                <p>2016 &copy; Develop Site : Md Hasan</p>
             </footer>
             <!-- /#footer -->
             <!-- #helpModal -->
@@ -517,4 +557,4 @@
     </form>
         </body>
 </html>
-
+@stop

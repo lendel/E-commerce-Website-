@@ -12,6 +12,8 @@
 */
 
 Route::get('/','user_panel_control@index');
+
+Route::get('/Company_inforamtion','Admin_panel_control@Company_inforamtion');
 Route::get('/Admin','Admin_panel_control@System_vaild');
 
 
