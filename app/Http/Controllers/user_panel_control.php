@@ -11,9 +11,5 @@ class user_panel_control extends Controller
       return view('user_panel.index');
     }
 
-    public function login_page()
-    {
-
-    	return view('Admin_panel.index');
-    }
+    
 }

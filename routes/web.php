@@ -12,7 +12,8 @@
 */
 
 Route::get('/','user_panel_control@index');
-Route::get('/login_page','user_panel_control@login_page');
-Auth::routes();
+Route::get('/Admin','Admin_panel_control@System_vaild');
 
+
+Auth::routes();
 Route::get('/home', 'HomeController@index');
