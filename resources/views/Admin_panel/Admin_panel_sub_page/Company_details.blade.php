@@ -25,8 +25,8 @@
          });
       </script>
 <br>
-<button style="border:1px #367FA9 solid;font-family:times new roman;color:#367FA9;height: 41px;width: 130px;font-size: 18px;background:#EFEFEF;" type="button" id="Basic">Basic    <i class="fa fa-circle" aria-hidden="true"></i></button>
-<button style="border:1px #367FA9 solid;font-family:times new roman;color:#367FA9;height: 41px;width: 130px;font-size: 18px;background:#EFEFEF;" type="button" hidden="hidden" id="Advanced"><i class="fa fa-circle" aria-hidden="true"></i>         Advanced</button>
+<button style="border:1px #367FA9 solid;font-family:times new roman;color:#367FA9;height: 41px;width: 130px;font-size: 18px;background:#EFEFEF;" type="button" id="Basic"><i class="fa fa-circle" aria-hidden="true"></i>  Basic    </button>
+<button style="border:1px #367FA9 solid;font-family:times new roman;color:#367FA9;height: 41px;width: 130px;font-size: 18px;background:#3C8DBC; color:white" type="button" hidden="hidden" id="Advanced"> Advanced <i class="fa fa-circle" aria-hidden="true"></i>        </button>
 
 <br><br>
 <div style="font-family:times new roman" class="Basic_Data well">
@@ -71,7 +71,7 @@
 
 <div style="font-family:times new roman" hidden="hidden" class="Advanced_Data well">
   <div class="container">
-    
+
     <div class="col-sm-12">
           <div class="col-sm-2">Company EIIN</div>
           <div class="col-sm-3"><input type="text" name="" class="col-xs-8"></div>

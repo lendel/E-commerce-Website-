@@ -262,6 +262,43 @@
                                     </ul>
                                   </li>
 
+                                  <li>
+                                    <a href="javascript:;">
+                                      <i class="fa fa-exclamation-triangle"></i>
+                                      <span class="link-title">
+                                      Configuration
+                                    </span>
+                                      <span class="fa arrow"></span>
+                                    </a>
+                                    <ul class="collapse">
+                                      <li>
+                                        <a href="/Payment_method">
+                                          <i class="fa fa-angle-right"></i>Payment Method</a>
+                                      </li>
+                                      <li>
+                                        <a href="/Company_inforamtion">
+                                          <i class="fa fa-angle-right"></i>General Setting</a>
+                                      </li>
+                                      <li>
+                                        <a href="405.html">
+                                          <i class="fa fa-angle-right"></i> </a>
+                                      </li>
+                                      <li>
+                                        <a href="500.html">
+                                          <i class="fa fa-angle-right"></i> </a>
+                                      </li>
+                                      <li>
+                                        <a href="503.html">
+                                          <i class="fa fa-angle-right"></i> </a>
+                                      </li>
+                                      <li>
+                                        <a href="offline.html">
+                                          <i class="fa fa-angle-right"></i>Role User</a>
+                                      </li>
+
+                                    </ul>
+                                  </li>
+
 
 
                                 <li class="">

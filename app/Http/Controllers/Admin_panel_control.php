@@ -14,4 +14,9 @@ class Admin_panel_control extends Controller
     {
       return view('Admin_panel.Admin_panel_sub_page.Company_details');
     }
+    public function Payment_method()
+    {
+      return view('Admin_panel.Admin_panel_sub_page.Payment_method');
+
+    }
 }
