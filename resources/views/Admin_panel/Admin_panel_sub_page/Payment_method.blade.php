@@ -14,7 +14,7 @@
 
             });
 
-          
+
          });
       </script>
 
@@ -40,7 +40,7 @@
   <div class="row">
 
 
-      <table class="table table-bordered">
+      <table style="font-family:times new roman" class="table table-bordered">
         <thead>
           <tr style="background:#F5F5F5">
             <th>Friendly Name</th>
@@ -135,7 +135,7 @@
               <img style="height: 60px;" src="images/Develop/unnamed.png">
             </div>
             <div class="col-sm-2"></div>
-            <div class="col-sm-5"></div>
+            <div class="col-sm-5"><button type="submit" class="btn btn-primary" ><i class="fa fa-floppy-o" aria-hidden="true"></i>   Save</button></div>
           </div>
 
       </div>
