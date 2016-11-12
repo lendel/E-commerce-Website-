@@ -19,4 +19,12 @@ class Admin_panel_control extends Controller
       return view('Admin_panel.Admin_panel_sub_page.Payment_method');
 
     }
+    public function category_setup()
+    {
+      return view('Admin_panel.Admin_panel_sub_page.category_setup');
+    }
+    public function Brand_setup()
+    {
+      return view('Admin_panel.Admin_panel_sub_page.Brand_setup');
+    }
 }

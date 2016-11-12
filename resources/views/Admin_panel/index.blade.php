@@ -302,7 +302,7 @@
 
 
                                 <li class="">
-                                    <a href="javascript:;">
+                                    <a href="/category_setup">
                                       <i class="fa fa-cog" aria-hidden="true"></i>
                                       <span class="link-title">
                                   Category Setup
@@ -313,7 +313,7 @@
                                   </li>
 
                                   <li class="">
-                                    <a href="javascript:;">
+                                    <a href="/Brand_setup">
                                       <i class="fa fa-cog" aria-hidden="true"></i>
                                       <span class="link-title">
                                     Manufacture(Brand) Setup

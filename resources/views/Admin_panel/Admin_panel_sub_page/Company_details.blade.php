@@ -109,7 +109,7 @@
 
     <div class="col-sm-12">
           <div class="col-sm-2">Company Address</div>
-          <div class="col-sm-8"><textarea rows="5" class="form-control"></textarea></div>
+          <div class="col-sm-8"><textarea rows="5" cols="5" class="form-control"></textarea></div>
 
     </div>
   </div>
